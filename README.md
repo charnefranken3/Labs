@@ -27,7 +27,8 @@ How to use ssh to connect to a remote server, Learning that ls helps you get lis
 
 ls readme
 
-**Correct**
+**CORRECT**
+
 Cat readme
 
 'ls' can only give you a list
@@ -44,7 +45,8 @@ Some files begin with a ('-') and are treated as a command options.
 
 Cat -
 
-**Correct**
+**CORRECT**
+
 Cat ./-
 
 './' tells Linux it is a file in the current directory
