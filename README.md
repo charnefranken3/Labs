@@ -1,12 +1,15 @@
-# Over-The-Wire-Bandit
-Aspiring Cybersecurity Professional building hands-on experience and skill with OverTheWire Bandit, Linux commands and practical labs.
-
 # About This Repository
-It is documenting my hands-on learning Journey through the OverTheWire Bandit wargame. 
+It is documenting my hands-on learning Journey through different labs and my findings. (Includes notes, screenshots, and detailed experiences of what I learnt)
+
+# Lab One: Over-The-Wire Bandit
+
 
 The Goal is:
+
 -Linux Command Line.
--Problem Solving
+
+-Problem Solving - Finding the password 
+
 -Cybersecurity Fundamentals
 
 ## Progress
@@ -32,13 +35,16 @@ ls readme
 Cat readme
 
 'ls' can only give you a list
+
 'cat' opens the file for you to read
+
 'ssh' connects to a remote server
 
 
 
 ### Level Two
 #### Handeling special file names
+
 Some files begin with a ('-') and are treated as a command options.
 
 **INCORRECT**
@@ -50,6 +56,7 @@ Cat -
 Cat ./-
 
 './' tells Linux it is a file in the current directory
+
 '-' Can also be used to stop option parsing
 
 ## Screenshots
