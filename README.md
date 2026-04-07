@@ -17,7 +17,8 @@ The Goal is:
 |  Level    |  Status   |  Notes                                                |
 |-----------|-----------|-------------------------------------------------------|
 | Level 0-1 | Completed | Learnt how to SSH into a remote server                |
-| Lvel 2-3  | Completed | Worked with special dash file names -                 |
+| Level 2-3  | Completed | Worked with special dash file names -                 |
+| Level 3-4 | Completed| Worked with spaces in a filename                       |
 
 
 ## Key Lessons Learnt
