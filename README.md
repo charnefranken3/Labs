@@ -22,7 +22,7 @@ The Goal is:
 
 ## Key Lessons Learnt
 
-### Level One
+### Level Zero
 #### Handeling basic commands
 How to use ssh to connect to a remote server, Learning that ls helps you get lists and folders, and adding that file to cat will open the folder context.
 
@@ -42,7 +42,7 @@ Cat readme
 
 
 
-### Level Two
+### Level One
 #### Handeling special file names
 
 Some files begin with a ('-') and are treated as a command options.
@@ -59,11 +59,34 @@ Cat ./-
 
 '-' Can also be used to stop option parsing
 
+### Level Two
+#### Handeling spaces in filenames that begin with '-' or '--'
+
+Some files have spaces and begin with special characters. They can also be found in the home directory (cd)
+
+**INCORRECT**
+
+Cat -
+Cat -- spaces in this file--
+Cat ./ --
+Cat "--Spaces in this file.."
+
+**CORRECT**
+
+Cat ./"--spaces in the filename--"
+
+'.' tells it that it is in the current file directory
+
+'/"--...--"' Treated as a path
+
+
 ## Screenshots
 <img width="779" height="557" alt="First Lab, #Bandit-Overthewire" src="https://github.com/user-attachments/assets/1b794157-fb90-4f94-ac4f-b02f04ff3523" />  Level 0-1
 <img width="732" height="545" alt="Second Lab # Bandit- Overthewire" src="https://github.com/user-attachments/assets/f2600c3d-ef89-4ac7-92ef-b009482fcf71" />  Level 1-2
+<img width="468" height="418" alt="Bandit 2 Password Lab" src="https://github.com/user-attachments/assets/24c6e104-8967-49c7-b662-0f40cd72c05d" />  Level 2-3
 
 ## Tools Used
+
 - Linux Terminal
 - SSH
 - OverTheWire Bandit
