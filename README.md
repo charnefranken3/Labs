@@ -29,7 +29,7 @@ The Goal is:
 
 ## Key Lessons Learnt
 
-### Level Zero
+### Level 0-1
 #### Handeling basic commands
 How to use ssh to connect to a remote server, Learning that ls helps you get lists and folders, and adding that file to cat will open the folder context.
 
@@ -49,7 +49,7 @@ Cat readme
 
 
 
-### Level One
+### Level 1-2
 #### Handeling special file names
 
 Some files begin with a ('-') and are treated as a command options.
@@ -66,7 +66,7 @@ Cat ./-
 
 '-' Can also be used to stop option parsing
 
-### Level Two
+### Level 2-3
 #### Handeling spaces in filenames that begin with '-' or '--'
 
 Some files have spaces and begin with special characters. They can also be found in the home directory (cd)
@@ -86,49 +86,43 @@ Cat ./"--spaces in the filename--"
 
 '/"--...--"' Treated as a path
 
-### Level Two
-#### Handeling spaces in filenames that begin with '-' or '--'
+### Level 3-4
+#### Worked with hidden human readable file in the inhere directory.
 
-Some files have spaces and begin with special characters. They can also be found in the home directory (cd)
+Some data are stored in specific files. To get into any file in linux use cd and then to open this file I used la and cat commands.
 
 **INCORRECT**
-
-Cat -
-Cat -- spaces in this file--
-Cat ./ --
-Cat "--Spaces in this file.."
+ 
+cd -/ inhere - tries to interpret both - and / inhere which does not make sense for cd
+cd inhere - go into a directory 
+ls - shows visible files only
 
 **CORRECT**
 
-Cat ./"--spaces in the filename--"
+Cat ./"...hiding-From-You  - correct data from the file
+Cat - View or read content of the specific file 
+ls - see what files are inside 
+la {ls-la} - reaveals hidden files starting with '.'
 
-'.' tells it that it is in the current file directory
+la is a alias for ls-a or ls - la
 
-'/"--...--"' Treated as a path
 
-### Level Three
-#### Handeling spaces in filenames that begin with '-' or '--'
 
-Some files have spaces and begin with special characters. They can also be found in the home directory (cd)
+### Level 4-5
+#### How to find human readable and a specific sized file
+
+Some data are stored in specific files. To navigate, use cd, and to inspect contents use ls and cat. In this level, I worked with human-readable data and located a file of a specific size
 
 **INCORRECT**
 
-Cat -
-Cat -- spaces in this file--
-Cat ./ --
-Cat "--Spaces in this file.."
+Nothing incorrect just finding the right file.
 
 **CORRECT**
 
-Cat ./"--spaces in the filename--"
+The correct file was 07.
 
-'.' tells it that it is in the current file directory
-
-'/"--...--"' Treated as a path
-
-### Level Four
-#### Handeling spaces in filenames that begin with '-' or '--'
-
+### Level 5-6
+#### How to find human readable and a specific sized file
 Some files have spaces and begin with special characters. They can also be found in the home directory (cd)
 
 **INCORRECT**
