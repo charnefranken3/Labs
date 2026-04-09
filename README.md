@@ -123,6 +123,31 @@ The correct file was 07.
 
 ### Level 5-6
 #### How to find human readable and a specific sized file
+This taught me how to find specific data and files, what commands to use and how to use them properly.
+
+***INCORRECT***
+ls la - Incomplete command
+cat maybehere07 - not current directory
+lsmaybehere07 - not current directory 
+
+***CORRECT***
+cat inhere/maybehere07/.file - Direct path
+find inhere -type f -size 1033c
+find - used to search for files/directories
+inhere - the directory where the search begins
+-type f - limits search to files only
+-size 1033c - finds exact file with those bytes / without c it will use blocks and not bytes
+
+### Level 6-7
+#### How to find human readable and a specific sized file
+This taught me how to find specific data and files, what commands to use and how to use them properly.
+
+***INCORRECT***
+l
+
+***CORRECT***
+
+
 
 
 
