@@ -22,7 +22,7 @@ The Goal is:
 | Level 4-5 | Completed | Worked with human readable files                       |
 | Level 5-6 | Completed | How to find human readable and a specific sized file   |
 | Level 6-7 | Completed | How to find human readable and a specific sized file   |
-| Level 7-8 | Completed | How to finf and search in a .txt file                  |
+| Level 7-8 | Completed | How to find and search in a .txt file                  |
 | Level 8-9 | Completed | How to search for a unique string in a .txt file       |
 | Level 9-10 | Completed | How to search for a file with a "="                   |
 
@@ -140,15 +140,67 @@ inhere - the directory where the search begins
 
 ### Level 6-7
 #### How to find human readable and a specific sized file
-This taught me how to find specific data and files, what commands to use and how to use them properly.
+This taught me how to find specific data and files, what commands to use and how to use them properly. It also helped me to use the correct format for finding things I dont know.
+<img width="185" height="100" alt="image" src="https://github.com/user-attachments/assets/070557bc-1dc6-47ee-8075-0d1b559fd347" />
 
 ***INCORRECT***
-l
+Nothing
 
 ***CORRECT***
+cat /var/lib/dpk/info/bandit7.password - Direct path
+ used imput - find / -type f - Find a file type
+ - user - a previous file stored under a user name
+ - group - anf stored with or owned by a group.
+
+### Level 7-8
+#### How to find and search in a .txt file
+The password is the only word in the txt file that contained the word millionth. Use grep for searching for a specific  string/pattern in a file. find is used to locate specific files/directories by name, type, size etc
+
+***INCORRECT***
+find / -type txt - word millionth
+Find does not have a word option.
+
+***CORRECT***
+ls - listed the directories
+Grep - searched for the word millionth
+
+### Level 8-9
+#### How to find and search in a .txt file
+The password is the only word in the txt file that appears once. shows lines that only appears once, only works on sorted data that is why we pipe it |.
+
+***INCORRECT***
+grep data.txt|uniq -u - grep uses a pattern to search for . running grep treats 'data.txt' as a pattern and looks for it in stdin (which is empty).
+
+***CORRECT***
+ls - listed the directories
+sort - sorted the file
+uniq -u - printed the line that only appears once.
+
+### Level 9-10
+#### How to search for a file with a "="
+The password is the human readable, and proceeded with = characters.ALways check file type, strings is essential for for extracting prinatable characters, Piping helps with large outupts. binary files hides passwords among garbage data.
+
+***INCORRECT***
+grep - does not handle binary files
+base 64 -d datat.t - invalid 
+cat -  same issue
+gzip - type of file not in use
+
+
+***CORRECT***
+ls -l - confirmed it was a binary file
+strings - find all human readable strings
+grep - used tofilter lines with =
+
+### Level 10-11
+#### How to search for a file with a "="
+The password is the human readable, and proceeded with = characters.ALways check file type, strings is essential for for extracting prinatable characters, Piping helps with large outupts. binary files hides passwords among garbage data.
+
+***INCORRECT***
 
 
 
+***CORRECT***
 
 
 
