@@ -271,5 +271,41 @@ l<img width="677" height="192" alt="Bandit 4 Password Lab" src="https://github.c
   Directory enumeration
   Identifying Exposed Files
   Web server misconfigeration risks
+
+  # Level 3-4
+  ### Objective
+  locate hidden content and retrieve the credentials for the next level.
+
+  ### Investigation process
+  Inspect webpage and developer tools
+
+   Check page source and browser console
+
+  Investigated common web discovery files
+
+  ### Discovery
+  Accessed the site's robots.txt file through url path
+  Revealed hiddedn directory not linked to main webpage
+
+  ### Findings
+  A hidden directory containing sensitive information was exposed
+
+  Contained credentials to next level.
+
+  ### Vulnerability Identified
+
+  - Sensitive information path disclosed through robots.txt
+  - Security through obsceruty
+  - Hidden information accessable through without authentication
+
+    ### Security Lesson
+    'robots.txt' is intended for search engine crawlers and should not be used to hide sensitive data or directories.
+    Anything publically accessable through a url can still be discovered by users and attackers.
+
+    ### Skills Learned
+    - Web enumeration
+    - Using robots.txt
+    - Hidden Directory Discovery
+    - Understanding Index crawler behaviour
   
 
