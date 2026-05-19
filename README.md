@@ -225,10 +225,51 @@ l<img width="677" height="192" alt="Bandit 4 Password Lab" src="https://github.c
 - OverTheWire Bandit
 
   ## What I'm Working On
-  - Continueing OverTheWire Levels
+  - Continueing OverTheWire Bandid Levels
   - Improving Linux Command Knowledge
   - Building a Cybersecurity Profile
 
   ## Note
   Passwords and sensitive information are not included for security and integrity.
+
+  ### Lab 2 - Natas Over The Wire
+
+  ## Level 0-1 & 1-2
+   Was unfortunatly done without proper write up.
+
+  ##Level 2-3
+  # Objective
+  Find the password to the next level.
+
+  # Initial Observation
+  The screen had one sentence, " there is nothing on this page."
+
+  ## Investigation
+  ### Checked page source
+  used - ctrl + u ~ found a reference to /files/pixel.png
+
+  ### Explored page directory
+  navigated to the url with the directory in. revealed a directory listing.
+
+  ### Found Exposed files
+  Directory contained,
+  pixel.png - a decoy
+  users.txt - sensitive file
+
+  ## Retrieved Password
+  Opened the txt file and found the credentials for the next level.
+
+  ### Vulnerability Identified
+  Directory listing enabled on /files/
+  Sensitive file exposure txt
+
+  ### Security Lesson
+  Web servers should never expose directory contents publiclly unless intented
+
+  ### Skills learned
+  URL Path manipulation
+  Directory enumeration
+  Identifying Exposed Files
+  Web server misconfigeration risks
+  
 
