@@ -25,6 +25,7 @@ The Goal is:
 | Level 7-8 | Completed | How to find and search in a .txt file                  |
 | Level 8-9 | Completed | How to search for a unique string in a .txt file       |
 | Level 9-10 | Completed | How to search for a file with a "="                   |
+| Level 10-11 | Completed | How to use base64                              |
 
 
 ## Key Lessons Learnt
@@ -193,16 +194,15 @@ strings - find all human readable strings
 grep - used tofilter lines with =
 
 ### Level 10-11
-#### How to search for a file with a "="
-The password is the human readable, and proceeded with = characters.ALways check file type, strings is essential for for extracting prinatable characters, Piping helps with large outupts. binary files hides passwords among garbage data.
+#### How to use base64
+Using ls, and basic linux commands to decript the password for level 11.
 
 ***INCORRECT***
-
+sort data.txt - That will just list the base64 encoding and not tell you what is in the file.
 
 
 ***CORRECT***
-
-
+base64 -d data.txt - will decode the text.
 
 
 ## Screenshots
@@ -216,6 +216,8 @@ l<img width="677" height="192" alt="Bandit 4 Password Lab" src="https://github.c
 <img width="595" height="483" alt="Bandit7 Password Lab" src="https://github.com/user-attachments/assets/1660e976-8e13-4d83-b284-8cefe4f0fdf8" /> Level 7-8
 <img width="380" height="127" alt="Bandit8 Password Lab" src="https://github.com/user-attachments/assets/3c59794e-aca6-4835-a50f-4ac923df134c" /> Level 8-9
 <img width="535" height="504" alt="bANDIT9 Password Lab" src="https://github.com/user-attachments/assets/df1aa127-f8dd-4524-82b8-fb099c71f3c3" /> Level 9-10
+<img width="493" height="85" alt="image" src="https://github.com/user-attachments/assets/9d53d299-397a-4d3c-bf65-085e3b643b8d" /> Level 10-11
+
 
 
 ## Tools Used
